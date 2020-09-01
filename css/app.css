@@ -21,6 +21,10 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* Le decimos que la pagina no tendrá scroll hacia los lados */
 /* buscar propiedad overflow por internet, es buenarda */
 
@@ -94,7 +98,7 @@ a {
     height: 90vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    width: 100vh;
+    /* width: 100vw; */
 }
 
 @media(min-width: 992px) {
