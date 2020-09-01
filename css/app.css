@@ -21,6 +21,12 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Le decimos que la pagina no tendrá scroll hacia los lados */
+/* buscar propiedad overflow por internet, es buenarda */
+body {
+    overflow-x: hidden;
+}
+
 img {
     width: 100%;
 }
