@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- theme-color hace que la barra de chrome en android cambie de color -->
     <meta name="theme-color" content="#27ae60">
     <title>Principal - Mis perris</title>
+    <!-- agrego una fuente desde fonts.google.com -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- agrego fontawesome.com para los iconos -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!-- llamo a mi archivo css -->
     <link rel="stylesheet" href="./css/app.css">
 </head>
 
@@ -24,6 +28,9 @@
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
+
+                <!-- container es el que quiero mostrar cuando se vea desde pc y responsive desde el celular -->
+                <!-- para no complicarme, creo 2 navegaciones y si es desde celu oculto una y muestro otra y viceversa -->
                 <ul class="navegacion__lista__container">
                     <div class="navegacion__container">
                         <li class="navegacion__lista__item"><a href="">Inicio</a></li>
@@ -44,9 +51,13 @@
             <figure class="header__imagen">
                 <div>
                     <img src="./img/perro.png" alt="Perro">
+                    <!-- solo muestro esto cuando esté desde celular (revisar css) -->
                     <h1 class="header__imagen__titulo">Rescate y adopcion de perros callejeros</h1>
                 </div>
             </figure>
+
+            <!-- lo mismo con el footer responsive para celular y el otro para desktop -->
+            <!-- esto no es necesario -->
             <div class="header__footer">
                 <a href="tel:+56982683923" class="header__footer__numero">+569 8268 3923</a>
                 <h1 class="header__footer__titulo">Rescate y adopcion de perros callejeros</h1>

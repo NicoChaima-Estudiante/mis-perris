@@ -1,7 +1,11 @@
+/* en css puedo declarar variables por si en el futuro quiero cambiar todo el color de la app cambiarlo solo desde aca */
+
 :root {
     --principal: #27ae60;
     --blanco: #ffffff;
 }
+
+/* elimino el margin y padding de todas las etiquetas de html */
 
 *,
 *::before,
@@ -11,6 +15,8 @@
     box-sizing: border-box;
 }
 
+/* le agrego la fuente que seleccione el fonts.google.com */
+
 html {
     font-family: 'Roboto', sans-serif;
 }
@@ -19,6 +25,8 @@ img {
     width: 100%;
 }
 
+/* esto es para eliminarle los estilos por defecto a los botones */
+
 button {
     border: none;
     cursor: pointer;
@@ -26,13 +34,21 @@ button {
     background-color: transparent;
 }
 
+/* esto es para eliminarle los estilos por defecto a las ul */
 ul {
     list-style: none;
 }
 
+/* esto es para eliminarle los estilos por defecto a los links a*/
 a {
     text-decoration: none;
 }
+
+
+/* creo un container para que la informacion no se pegue a los bordes */
+/* por cada tamaño redimensiono el container para que se adapte mejor al tipo de pantalla */
+/* @media(min-width: ) trabaja bajo la metodologia mobile-first que es la buena practica que todos siguen */
+/* pueden buscar mas de esto de media por youtube */
 
 .container {
     width: 100%;
@@ -66,6 +82,10 @@ a {
 
 /* -------------------------------------------------------------------------- */
 
+
+/* le digo que cuando sea desde movil su alto sea del 90% de la pantalla, pero cuando llegue a
+992px para arriba le cambio el alto al 100% */
+/* tambien le creo una estructura con display grid que sirve para maquetar  */
 .header {
     background-color: var(--principal);
     height: 90vh;
@@ -119,6 +139,9 @@ a {
     }
 }
 
+/* cuando se esté viendo desde un movil (responsive) oculto el contenedor de la lista
+pero con el archivo javascript estoy escuchando cuando el usuario haga click en el boton
+y le cambia el display a block para que se muestre */
 
 .navegacion__lista__responsive {
     display: none;
@@ -129,6 +152,7 @@ a {
     display: none;
 }
 
+/* cuando se esté viendo desde el pc, ocultamos la lista de movil y mostramos la de desktop */
 @media(min-width: 992px) {
     .navegacion__lista__responsive {
         display: none !important;
