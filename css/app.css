@@ -23,6 +23,7 @@ html {
 
 body {
     overflow-x: hidden;
+    box-sizing: inherit;
 }
 
 /* Le decimos que la pagina no tendrá scroll hacia los lados */
@@ -424,8 +425,8 @@ y le cambia el display a block para que se muestre */
 }
 
 .section__article.crowdfunding .section__article__img {
-    width: 20rem;
-    max-width: 300px;
+    width: 70%;
+    min-width: 300px;
 }
 
 .section__article.crowdfunding .section__article_boton {
