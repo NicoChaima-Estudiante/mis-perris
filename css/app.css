@@ -417,7 +417,7 @@ y le cambia el display a block para que se muestre */
     width: 20rem;
 }
 
-.section__article.crowdfunding .section__article__boton {
+.section__article.crowdfunding .section__article_boton {
     border: none;
     background-color: transparent;
     border: 2px solid #000;
