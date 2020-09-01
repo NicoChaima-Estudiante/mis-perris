@@ -220,10 +220,21 @@ y le cambia el display a block para que se muestre */
 
 
 
-.header__footer {
-    display: none;
-    color: #ffff;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(min-width: 768px) {
     .header__footer {
@@ -248,33 +259,33 @@ y le cambia el display a block para que se muestre */
 
 .header__footer__titulo {
     margin-bottom: 5rem;
+    display: none;
+    color: #fff;
 }
 
 @media(min-width: 768px) {
     .header__footer__titulo {
         text-align: center;
         margin-bottom: 0;
+        display: block;
     }
-}
-
-.header__footer__links {
-    display: none;
 }
 
 @media(min-width: 768px) {
     .header__footer__links {
-        display: block;
+        display: flex;
         margin-left: auto;
     }
 }
 
-.header__footer__links button {
+.header__footer__links a {
     color: var(--principal);
     background-color: #fff;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
     position: relative;
+    margin-left: .25rem;
 }
 
 .header__footer__links i {
@@ -300,11 +311,32 @@ y le cambia el display a block para que se muestre */
     }
 }
 
-.header__footer__responsive .header__footer__numero,
-.header__footer__responsive .header__footer__links {
+.header__footer__responsive .header__footer__numero {
     display: block;
     color: #ffff;
 }
+
+.header__footer__responsive .header__footer__links {
+    display: flex;
+}
+
+.header__footer__responsive .header__footer__links a {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
