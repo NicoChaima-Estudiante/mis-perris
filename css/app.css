@@ -94,6 +94,7 @@ a {
     height: 90vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    width: 100vh;
 }
 
 @media(min-width: 992px) {
