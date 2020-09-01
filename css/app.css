@@ -68,9 +68,15 @@ a {
 
 .header {
     background-color: var(--principal);
-    height: 100vh;
+    height: 90vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
+}
+
+@media(min-width: 992px) {
+    .header {
+        height: 100vh;
+    }
 }
 
 .navegacion {
