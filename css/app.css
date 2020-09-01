@@ -116,6 +116,7 @@ a {
 
 .navegacion__lista__responsive {
     display: none;
+    position: relative;
 }
 
 .navegacion__lista__container {
@@ -134,6 +135,8 @@ a {
 
 .navegacion__responsive {
     background-color: var(--blanco);
+    position: absolute;
+    width: 100%;
 }
 
 .navegacion__container {
@@ -151,6 +154,20 @@ a {
     display: block;
     padding: .5rem 1rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .header__imagen {
